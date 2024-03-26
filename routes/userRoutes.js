@@ -1,7 +1,7 @@
 import { Router } from 'express'
 
 import { changePassword, forgotPassword, getUser, login, logout, register, resetPassword, updateUser } from '../controllers/userController.js'
-import {jwtAuth} from '../middlewares/userMiddleware.js'
+import { jwtAuth } from '../middlewares/userMiddleware.js'
 import upload from '../middlewares/multerMiddleware.js'
 
 const userRouter = new Router()
